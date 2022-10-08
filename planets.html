@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--font start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <!--font end-->
+    <link rel="icon" href="images/logo.png">
+    <title>Planete</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img src="images/logo-inv.png" id="nav-logo">
+            <nav>
+                <div class="flex navigation-parent">
+                    <div class="navigation" id="nav-home">
+                        <a href="index.html">Acasă</a>
+                    </div>
+                    <div class="navigation" id="nav-planets">
+                        <a href="planets.html" class="current">Planete</a>
+                    </div>
+                    <div class="navigation" id="nav-moons">
+                        <a href="moons.html">Luni</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="overview flex">
+        <div class="overview-child">
+            <div class="overview-title">
+                Planete
+            </div>
+            <div class="overview-info">
+                Există mai multe planete decât stele în galaxia noastră. Numărul actual care orbitează steaua noastră:
+                opt.
+
+                Planetele interioare, stâncoase, sunt Mercur, Venus, Pământ și Marte. Cel mai nou rover al NASA -
+                Perseverance - a aterizat pe Marte pe 18 februarie 2021. Planetele exterioare sunt giganții gazoși
+                Jupiter
+                și Saturn și giganții de gheață Uranus și Neptun.
+
+                Dincolo de Neptun, domnește o nouă clasă de lumi mai mici numite planete pitice, inclusiv Pluto,
+                favoritul
+                de multă vreme. Mii de alte planete au fost descoperite dincolo de sistemul nostru solar. Oamenii de
+                știință
+                le numesc exoplanete (exo înseamnă „din afară”).
+                <br><br>
+                Pentru mai multe informații, apăsați pe imaginea planetei (va produce un pop-up).
+            </div>
+        </div>
+        <!--primary planets navigation-->
+        <div class="side-nav visible" id="primary-nav">
+            <div class="circle flex" id="mercury-circle" onclick="window.location = '#mercury-presentation';">
+                <div class="planet-name">
+                    Mercur
+                </div>
+            </div>
+            <div class="line">
+
+            </div>
+            <div class="circle flex" id="venus-circle" onclick="window.location = '#venus-presentation';">
+                <div class="planet-name">
+                    Venus
+                </div>
+            </div>
+            <div class="line">
+
+            </div>
+            <div class="circle flex" id="earth-circle" onclick="window.location = '#earth-presentation';">
+                <div class="planet-name">
+                    Pământ
+                </div>
+            </div>
+            <div class="line">
+
+            </div>
+            <div class="circle flex" id="mars-circle" onclick="window.location = '#mars-presentation';">
+                <div class="planet-name">
+                    Marte
+                </div>
+            </div>
+            <div class="line">
+
+            </div>
+            <div class="circle flex" id="jupiter-circle" onclick="window.location = '#jupiter-presentation';">
+                <div class="planet-name">
+                    Jupiter
+                </div>
+            </div>
+            <div class="line">
+
+            </div>
+            <div class="circle flex" id="saturn-circle" onclick="window.location = '#saturn-presentation';">
+                <div class="planet-name">
+                    Saturn
+                </div>
+            </div>
+            <div class="line">
+
+            </div>
+            <div class="circle flex" id="uranus-circle" onclick="window.location = '#uranus-presentation';">
+                <div class="planet-name">
+                    Uranus
+                </div>
+            </div>
+            <div class="line">
+
+            </div>
+            <div class="circle flex" id="neptune-circle" onclick="window.location = '#neptune-presentation';">
+                <div class="planet-name">
+                    Neptun
+                </div>
+            </div>
+        </div>
+        <!--dwarf planets navigation-->
+        <div class="side-nav" id="dwarf-nav">
+            <div class="circle flex" id="pluto-circle" onclick="window.location = '#pluto-presentation';">
+                <div class="planet-name">
+                    Pluto
+                </div>
+            </div>
+            <div class="line">
+
+            </div>
+            <div class="circle flex" id="ceres-circle" onclick="window.location = '#ceres-presentation';">
+                <div class="planet-name">
+                    Ceres
+                </div>
+            </div>
+            <div class="line">
+
+            </div>
+            <div class="circle flex" id="makemake-circle" onclick="window.location = '#makemake-presentation';">
+                <div class="planet-name" style="left: 4em;">
+                    Makemake
+                </div>
+            </div>
+            <div class="line">
+
+            </div>
+            <div class="circle flex" id="haumea-circle" onclick="window.location = '#haumea-presentation';">
+                <div class="planet-name" style="left: 3.8em;">
+                    Haumea
+                </div>
+            </div>
+            <div class="line">
+
+            </div>
+            <div class="circle flex" id="eris-circle" onclick="window.location = '#eris-presentation';">
+                <div class="planet-name">
+                    Eris
+                </div>
+            </div>
+        </div>
+        <!--hypothetical planets navigation-->
+        <div class="side-nav" id="hypothetical-nav">
+            <div class="circle flex" id="planetx-circle" onclick="window.location = '#planetx-presentation';">
+                <div class="planet-name">
+                    Planeta X
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="changer flex">
+        <div class="choice" id="primary-planet">
+            Primare
+        </div>
+        <div class="choice" id="dwarf-planet">
+            Pitice
+        </div>
+        <div class="choice" id="hypothetical-planet">
+            Ipotetice
+        </div>
+    </div>
+    <!--primary planets container-->
+    <div class="container visible" id="primary-container">
+        <div class="fader translateX presentation flex odd">
+            <div class="presentation-info">
+                <div class="presentation-title">
+                    Mercur
+                </div>
+                <div class="presentation-description">
+                    Cea mai mică planetă din sistemul nostru solar și cea mai apropiată de Soare, Mercur este doar puțin
+                    mai mare decât Luna Pământului.
+
+                    De pe suprafața lui Mercur, Soarele ar apărea de peste trei ori mai mare decât atunci când este
+                    privit de pe Pământ, iar lumina soarelui ar fi de șapte ori mai strălucitoare. În ciuda apropierii
+                    sale de Soare, Mercur nu este cea mai fierbinte planetă din sistemul nostru solar - acest titlu
+                    aparține lui Venus din apropiere, datorită atmosferei sale dense.
+                </div>
+            </div>
+            <div class="presentation-img" id="mercury-presentation"
+                onclick="window.open('https://solarsystem.nasa.gov/planets/mercury/overview')">
+                <img src="images/mercury-presentation.jpg">
+            </div>
+        </div>
+        <div class="fader translateX presentation flex even">
+            <div class="presentation-info">
+                <div class="presentation-title">
+                    Venus
+                </div>
+                <div class="presentation-description">
+                    Venus este a doua planetă de la Soare și este cel mai apropiat vecin planetar al Pământului. Este
+                    una dintre cele patru planete interioare, terestre (sau stâncoase) și este adesea numită geamănă a
+                    Pământului, deoarece are dimensiuni și densități similare. Cu toate acestea, acestea nu sunt gemeni
+                    identici - există diferențe radicale între cele două lumi.
+
+                    Venus are o atmosferă groasă, toxică, umplută cu dioxid de carbon și este permanent învăluită în
+                    nori groși, gălbui, de acid sulfuric, care captează căldura, provocând un efect de seră fugar. Este
+                    cea mai fierbinte planetă din sistemul nostru solar, chiar dacă Mercur este mai aproape de Soare.
+                    Temperaturile de suprafață de pe Venus sunt de aproximativ 900 grade Fahrenheit (475 grade Celsius)
+                    - suficient de fierbinți pentru a topi plumbul. Suprafața are o culoare ruginie și este presărată
+                    cu munți intens zdrobiți și mii de vulcani mari. Oamenii de știință cred că este posibil ca niște
+                    vulcani să fie încă activi.
+                </div>
+            </div>
+            <div class="presentation-img" id="venus-presentation"
+                onclick="window.open('https://solarsystem.nasa.gov/planets/venus/overview')">
+                <img src="images/venus-presentation.png">
+            </div>
+        </div>
+        <div class="fader translateX presentation flex odd">
+            <div class="presentation-info">
+                <div class="presentation-title">
+                    Pământ
+                </div>
+                <div class="presentation-description">
+                    Planeta noastră natală este a treia planetă de la Soare și singurul loc pe care îl cunoaștem până
+                    acum, care este populat cu viață.
+
+                    În timp ce Pământul este doar a cincea cea mai mare planetă din sistemul solar, este singura lume
+                    din sistemul nostru solar cu apă lichidă la suprafață. Doar puțin mai mare decât Venus din
+                    apropiere, Pământul este cea mai mare dintre cele patru planete cele mai apropiate de Soare, toate
+                    fiind făcute din piatră și metal.
+
+                    Numele Pământ are cel puțin 1.000 de ani. Toate planetele, cu excepția Pământului, au fost numite
+                    după zeii și zeițele grecești și romane. Cu toate acestea, numele Pământ este un cuvânt germanic,
+                    care înseamnă pur și simplu „pământul”.
+                </div>
+            </div>
+            <div class="presentation-img" id="earth-presentation"
+                onclick="window.open('https://solarsystem.nasa.gov/planets/earth/overview')">
+                <img src="images/earth-presentation.jpg">
+            </div>
+        </div>
+        <div class="fader translateX presentation flex even">
+            <div class="presentation-info">
+                <div class="presentation-title">
+                    Marte
+                </div>
+                <div class="presentation-description">
+                    Marte este a patra planetă de la Soare - o lume praf, rece, deșertică, cu o atmosferă foarte
+                    subțire. Marte este, de asemenea, o planetă dinamică cu anotimpuri, calote polare, canioane, vulcani
+                    dispăruți și dovezi că a fost și mai activă în trecut.
+
+                    Marte este unul dintre cele mai explorate corpuri din sistemul nostru solar și este singura planetă
+                    pe care am trimis roveri să colinde peisajul extraterestru.
+
+                    NASA are în prezent două rover-uri (Curiosity și Perseverance), un lander (InSight) și un
+                    elicopter (Ingenuity) care explorează suprafața lui Marte.
+
+                    Roverul Perseverance - cel mai mare și mai avansat rover pe care NASA l-a trimis în altă lume - a
+                    atins planeta Marte pe 18 februarie 2021, după o călătorie de 203 de zile care traversează 473
+                    milioane
+                    de kilometri. Elicopterul Ingenuity a mers pe Marte atașat de burta navei Perseverance.
+
+                    Perseverance este una dintre cele trei nave spațiale care au ajuns pe Marte în 2021. Orbitatorul
+                    Hope din Emiratele Arabe Unite a sosit pe 9 februarie 2021. Misiunea Chinei Tianwen-1 a sosit pe 10
+                    februarie 2021 și include un orbitator, un lander, și un rover. Europa și India au, de asemenea,
+                    nave spațiale care studiază Marte de pe orbită.
+
+                    În mai 2021, China a devenit a doua națiune care a aterizat cu succes pe Marte când roverul său
+                    Zhurong Mars a atins planeta.
+
+                    O flotă internațională de opt orbitatori studiază Planeta Roșie de sus, inclusiv trei orbitatori ai
+                    NASA: 2001 Mars Odyssey, Mars Reconnaissance Orbiter și MAVEN.
+
+                    Acești exploratori robotici au găsit o mulțime de dovezi că Marte era mult mai umed și mai cald, cu
+                    o atmosferă mai groasă, acum miliarde de ani.
+                </div>
+            </div>
+            <div class="presentation-img" id="mars-presentation"
+                onclick="window.open('https://solarsystem.nasa.gov/planets/mars/overview')">
+                <img src="images/mars-presentation.jpg">
+            </div>
+        </div>
+        <div class="fader translateX presentation flex odd">
+            <div class="presentation-info">
+                <div class="presentation-title">
+                    Jupiter
+                </div>
+                <div class="presentation-description">
+                    Jupiter are o lungă și surprinzătoare istorie cu oamenii de știință - până în 1610, când Galileo
+                    Galilei
+                    a găsit primele luni dincolo de Pământ. Această descoperire a schimbat modul în care vedem
+                    universul.
+
+                    A cincea la rând de la Soare, Jupiter este, de departe, cea mai mare planetă din sistemul solar - de
+                    peste două ori mai masivă decât toate celelalte planete combinate.
+
+                    Dungile și vârtejurile familiare ale lui Jupiter sunt de fapt nori reci și vânt de amoniac și apă,
+                    plutind într-o atmosferă de hidrogen și heliu. Iconica Marea Pată Roșie a lui Jupiter este o furtună
+                    uriașă mai mare decât Pământul care a durat de sute de ani.
+
+                    O navă spațială - orbitatorul Juno al NASA - explorează în prezent această lume gigantică.
+                </div>
+            </div>
+            <div class="presentation-img" id="jupiter-presentation"
+                onclick="window.open('https://solarsystem.nasa.gov/planets/jupiter/overview')">
+                <img src="images/jupiter-presentation.jpg">
+            </div>
+        </div>
+        <div class="fader translateX presentation flex even">
+            <div class="presentation-info">
+                <div class="presentation-title">
+                    Saturn
+                </div>
+                <div class="presentation-description">
+                    Saturn este a șasea planetă de la Soare și a doua cea mai mare planetă din sistemul nostru solar.
+
+                    Împodobit cu mii de inele frumoase, Saturn este unic printre planete. Nu este singura planetă care
+                    are inele - formate din bucăți de gheață și stâncă - dar niciuna nu este la fel de spectaculoasă sau
+                    la fel de complicată ca a lui Saturn.
+
+                    La fel ca gigantul gazelor Jupiter, Saturn este o minge masivă formată în mare parte din hidrogen și
+                    heliu.
+                </div>
+            </div>
+            <div class="presentation-img" id="saturn-presentation"
+                onclick="window.open('https://solarsystem.nasa.gov/planets/saturn/overview')">
+                <img src="images/saturn-presentation.jpg">
+            </div>
+        </div>
+        <div class="fader translateX presentation flex odd">
+            <div class="presentation-info">
+                <div class="presentation-title">
+                    Uranus
+                </div>
+                <div class="presentation-description">
+                    Prima planetă găsită cu ajutorul unui telescop, Uranus a fost descoperită în 1781 de astronomul
+                    William Herschel, deși inițial credea că este fie o cometă, fie o stea.
+
+                    Doi ani mai târziu, obiectul a fost universal acceptat ca o nouă planetă, în parte datorită
+                    observațiilor astronomului Johann Elert Bode. Herschel a încercat fără succes să-și numească
+                    descoperirea Georgium Sidus după regele George al III-lea. În schimb, comunitatea științifică a
+                    acceptat sugestia lui Bode de a-l numi Uranus, zeul grec al cerului, așa cum a sugerat Bode.
+                </div>
+            </div>
+            <div class="presentation-img" id="uranus-presentation"
+                onclick="window.open('https://solarsystem.nasa.gov/planets/uranus/overview')">
+                <img src="images/uranus-presentation.jpg">
+            </div>
+        </div>
+        <div class="fader translateX presentation flex even">
+            <div class="presentation-info">
+                <div class="presentation-title">
+                    Neptun
+                </div>
+                <div class="presentation-description">
+                    Întunecat, rece și biciuit de vânturile supersonice, gigantul de gheață Neptun este a opta și cea
+                    mai îndepărtată planetă din sistemul nostru solar.
+
+                    De mai mult de 30 de ori mai departe de Soare decât Pământul, Neptun este singura planetă din
+                    sistemul nostru solar care nu este vizibilă cu ochiul liber și prima prezisă de matematică înainte
+                    de descoperirea sa. În 2011, Neptun a finalizat prima orbită de 165 de ani de la descoperirea sa în
+                    1846.
+
+                    Voyager 2 al NASA este singura navă spațială care a vizitat Neptun de aproape. A trecut în zbor în
+                    1989, în timp ce ieșea din sistemul solar.
+                </div>
+            </div>
+            <div class="presentation-img" id="neptune-presentation"
+                onclick="window.open('https://solarsystem.nasa.gov/planets/neptune/overview')">
+                <img src="images/neptune-presentation.jpg">
+            </div>
+        </div>
+    </div>
+    <!--dwarf planets container-->
+    <div class="container" id="dwarf-container">
+        <div class="fader translateX presentation flex odd">
+            <div class="presentation-info">
+                <div class="presentation-title">
+                    Pluto
+                </div>
+                <div class="presentation-description">
+                    Pluto - care este mai mic decât Luna Pământului - are un ghețar în formă de inimă de mărimea
+                    Texasului și Oklahomei. Această lume fascinantă are cerul albastru, luni care se răsucesc, munți
+                    înalți și ninsoare - dar zăpada este roșie.
+
+                    Pe 14 iulie 2015, nava spațială New Horizons a NASA și-a făcut zborul istoric prin sistemul Pluto -
+                    oferind primele imagini de aproape ale lui Pluto și ale lunilor sale și colectând alte date care
+                    ne-au transformat înțelegerea acestor lumi misterioase de pe frontiera exterioară a sistemului
+                    solar.
+
+                    În anii care au trecut de la acel zbucium inovator, aproape fiecare presupunere despre faptul că
+                    Pluto ar putea fi o minge inertă de gheață a fost „aruncată pe fereastră”.
+
+                    „Este clar pentru mine că sistemul solar a salvat cel mai bun pentru final!” a spus Alan Stern,
+                    investigator principal New Horizons de la Southwest Research Institute, Boulder, Colorado. „Nu am fi
+                    putut explora o planetă mai fascinantă sau mai importantă din punct de vedere științific la marginea
+                    sistemului nostru solar. Echipa New Horizons a lucrat timp de 15 ani pentru a planifica și executa
+                    acest zbor și Pluto ne-a plătit înapoi!”.
+                </div>
+            </div>
+            <div class="presentation-img" id="pluto-presentation"
+                onclick="window.open('https://solarsystem.nasa.gov/planets/dwarf-planets/pluto/overview')">
+                <img src="images/pluto.jpg">
+            </div>
+        </div>
+        <div class="fader translateX presentation flex even">
+            <div class="presentation-info">
+                <div class="presentation-title">
+                    Ceres
+                </div>
+                <div class="presentation-description">
+                    Planeta pitică Ceres este cel mai mare obiect din centura de asteroizi dintre Marte și Jupiter și
+                    singura planetă pitică situată în sistemul solar interior. A fost primul membru al centurii de
+                    asteroizi care a fost descoperit când Giuseppe Piazzi a văzut-o în 1801. Și când a sosit Dawn în
+                    2015, Ceres a devenit prima planetă pitică care a primit vizita unei nave spațiale.
+
+                    Numit un asteroid de mulți ani, Ceres este atât de mare și atât de diferit de vecinii săi stâncoși
+                    încât oamenii de știință au clasificat-o drept planetă pitică în 2006. Chiar dacă Ceres cuprinde 25%
+                    din masa totală a centurii de asteroizi, micul Pluto este încă de 14 ori mai mare masiv.
+
+                    Ceres este numită după zeița romană a porumbului și a recoltelor. Cuvântul cereală provine de la
+                    același nume.
+                </div>
+            </div>
+            <div class="presentation-img" id="ceres-presentation"
+                onclick="window.open('https://solarsystem.nasa.gov/planets/dwarf-planets/ceres/overview')">
+                <img src="images/ceres.jpg">
+            </div>
+        </div>
+        <div class="fader translateX presentation flex odd">
+            <div class="presentation-info">
+                <div class="presentation-title">
+                    Makemake
+                </div>
+                <div class="presentation-description">
+                    Alături de planete pitice Pluto, Eris și Haumea, Makemake este situat în Centura Kuiper, o regiune
+                    din afara orbitei Neptunului. Puțin mai mic decât Pluto, Makemake este al doilea cel mai strălucitor
+                    obiect din Centura Kuiper, văzut de pe Pământ (în timp ce Pluto este cel mai strălucitor). Este
+                    nevoie de aproximativ 305 de ani pe Pământ pentru ca această planetă pitică să facă o singură
+                    călătorie în jurul soarelui.
+
+                    Makemake deține un loc important în istoria studiilor sistemului solar, deoarece acesta - împreună
+                    cu Eris - a fost unul dintre obiectele a căror descoperire a determinat Uniunea Astronomică
+                    Internațională să reconsidere definiția unei planete și să creeze noul grup de planete pitice.
+
+                    Makemake a fost numit după zeul Rapanui al fertilității.
+                </div>
+            </div>
+            <div class="presentation-img" id="makemake-presentation"
+                onclick="window.open('https://solarsystem.nasa.gov/planets/dwarf-planets/makemake/in-depth')">
+                <img src="images/makemake.jpg">
+            </div>
+        </div>
+        <div class="fader translateX presentation flex even">
+            <div class="presentation-info">
+                <div class="presentation-title">
+                    Haumea
+                </div>
+                <div class="presentation-description">
+                    Situată în Centura Kuiper dincolo de orbita lui Neptun, planeta pitică Haumea este un obiect în
+                    formă ovală cu o rază de aproximativ 385 mile (puțin de 10 ori mai mică decât Pământul) și două
+                    luni, Namaka și Hi’iaka. O zi pe Haumea durează doar patru ore pe Pământ, făcându-l unul dintre cele
+                    mai rapide obiecte mari rotative din sistemul nostru solar.
+
+                    Denumită inițial 2003 EL61 (și poreclită Santa de o singură echipă de descoperire), Haumea
+                    locuiește în centura Kuiper și are aproximativ aceeași dimensiune ca Pluto. Rotirea sa rapidă
+                    distorsionează forma lui Haumea, făcând această planetă pitică să arate ca o minge de fotbal.
+                </div>
+            </div>
+            <div class="presentation-img" id="haumea-presentation"
+                onclick="window.open('https://solarsystem.nasa.gov/planets/dwarf-planets/haumea/in-depth')">
+                <img src="images/haumea.jpg">
+            </div>
+        </div>
+        <div class="fader translateX presentation flex odd">
+            <div class="presentation-info">
+                <div class="presentation-title">
+                    Eris
+                </div>
+                <div class="presentation-description">
+                    Eris este una dintre cele mai mari planete pitice cunoscute din sistemul nostru solar. Are
+                    aproximativ aceeași dimensiune ca Pluto, dar este de trei ori mai departe de Soare.
+
+                    Eris a părut mai întâi mai mare decât Pluto. Acest lucru a declanșat o dezbatere în comunitatea
+                    științifică care a dus la decizia Uniunii Astronomice Internaționale în 2006 de a clarifica
+                    definiția unei planete. Pluto, Eris și alte obiecte similare sunt acum clasificate ca planete
+                    pitice.
+
+                    Denumită inițial 2003 UB313 (și poreclită pentru războinicul de televiziune Xena de echipa sa de
+                    descoperire), Eris este numită pentru vechea zeiță greacă a discordiei și a conflictelor. Numele se
+                    potrivește, deoarece Eris rămâne în centrul unei dezbateri științifice despre definiția unei
+                    planete.
+                </div>
+            </div>
+            <div class="presentation-img" id="eris-presentation"
+                onclick="window.open('https://solarsystem.nasa.gov/planets/dwarf-planets/eris/in-depth')">
+                <img src="images/eris.jpg">
+            </div>
+        </div>
+
+    </div>
+    <!--hypothetical planets container-->
+    <div class="container" id="hypothetical-container">
+        <div class="fader translateX presentation flex odd">
+            <div class="presentation-info">
+                <div class="presentation-title">
+                    Planeta X
+                </div>
+                <div class="presentation-description">
+                    Cercetătorii Caltech au găsit dovezi matematice care sugerează că ar putea exista o „Planetă X”
+                    adânc în sistemul solar. Această ipotetică planetă de dimensiunea lui Neptun orbitează Soarele
+                    nostru într-o orbită extrem de alungită, cu mult dincolo de Pluto. Obiectul, pe care cercetătorii
+                    l-au poreclit „Planeta Nouă”, ar putea avea o masă de aproximativ 10 ori mai mare decât Pământul și
+                    orbitează de aproximativ 20 de ori mai departe de Soare în medie decât Neptun. Poate dura între
+                    10.000 și
+                    20.000 de ani pe Pământ pentru ca aceasta să facă o orbită completă în jurul Soarelui.
+
+                    Anunțul nu înseamnă că există o nouă planetă în sistemul nostru solar. Existența acestei lumi
+                    îndepărtate este doar teoretică în acest moment și nu s-a făcut nicio observare directă a obiectului
+                    poreclit „Planeta 9”. Predicția matematică a unei planete ar putea explica orbitele unice ale unor
+                    obiecte mai mici din Centura Kuiper, o regiune îndepărtată de resturi înghețate care se extinde cu
+                    mult dincolo de orbita lui Neptun. Astronomii caută acum planeta prevăzută.
+                </div>
+            </div>
+            <div class="presentation-img" id="planetx-presentation"
+                onclick="window.open('https://solarsystem.nasa.gov/planets/hypothetical-planet-x/in-depth')">
+                <img src="images/planetx.jpg">
+            </div>
+        </div>
+
+    </div>
+    <script src="javascript/jquery-initialise.js"></script>
+    <script src="javascript/observers.js"></script>
+    <script src="javascript/changer.js"></script>
+    <script src="javascript/header.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/side-info.css">
+    <!--font start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+    <!--font end-->
+    <link rel="icon" href="images/logo.png">
+    <title>Luni</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img src="images/logo-inv.png" id="nav-logo">
+            <nav>
+                <div class="flex navigation-parent">
+                    <div class="navigation" id="nav-home">
+                        <a href="index.html">Acasă</a>
+                    </div>
+                    <div class="navigation" id="nav-planets">
+                        <a href="planets.html">Planete</a>
+                    </div>
+                    <div class="navigation" id="nav-moons">
+                        <a href="moons.html" class="current">Luni</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--introduction + left nav + moons pop-ups-->
+    <div class="overview flex">
+        <!--introduction-->
+        <div class="overview-child">
+            <div class="overview-title">
+                Luni
+            </div>
+            <div class="overview-info">
+                Lunile - cunoscute și sub numele de sateliți naturali - orbitează planete și asteroizi din sistemul
+                nostru solar. Pământul are o lună și există mai mult de 200 de luni în sistemul nostru solar.
+                Majoritatea planetelor majore - toate cu excepția lui Mercur și Venus - au luni. Pluto și alte planete
+                pitice, precum și mulți asteroizi, au, de asemenea, luni mici. Saturn și Jupiter au cele mai multe luni,
+                cu zeci care orbitează fiecare dintre cele două planete uriașe.
+                <br><br>
+                Pentru mai multe informații, apăsați pe imaginea lunii (va produce un pop-up).
+                <br><br>
+                Notă: Planetele cu prea mulți sateliți naturali nu au informații despre toate lunile, ci doar despre
+                cele mai importante.
+            </div>
+        </div>
+        <!--moons left navigation-->
+        <div class="side-nav visible">
+            <div class="circle flex" id="earth-moons-circle" onclick="window.location = '#earth-moons-presentation';">
+                <div class="planet-name">
+                    Pământ
+                </div>
+            </div>
+            <div class="line">
+
+            </div>
+            <div class="circle flex" id="mars-moons-circle" onclick="window.location = '#mars-moons-presentation';">
+                <div class="planet-name">
+                    Marte
+                </div>
+            </div>
+            <div class="line">
+
+            </div>
+            <div class="circle flex" id="jupiter-moons-circle"
+                onclick="window.location = '#jupiter-moons-presentation';">
+                <div class="planet-name">
+                    Jupiter
+                </div>
+            </div>
+            <div class="line">
+
+            </div>
+            <div class="circle flex" id="saturn-moons-circle" onclick="window.location = '#saturn-moons-presentation';">
+                <div class="planet-name">
+                    Saturn
+                </div>
+            </div>
+            <div class="line">
+
+            </div>
+            <div class="circle flex" id="uranus-moons-circle" onclick="window.location = '#uranus-moons-presentation';">
+                <div class="planet-name">
+                    Uranus
+                </div>
+            </div>
+            <div class="line">
+
+            </div>
+            <div class="circle flex" id="neptune-moons-circle"
+                onclick="window.location = '#neptune-moons-presentation';">
+                <div class="planet-name">
+                    Neptun
+                </div>
+            </div>
+            <div class="line">
+
+            </div>
+            <div class="circle flex" id="pluto-moons-circle" onclick="window.location = '#pluto-moons-presentation';">
+                <div class="planet-name">
+                    Pluto
+                </div>
+            </div>
+        </div>
+        <!--rotate 180 to come back to the first element-->
+        <!--moons pop-ups-->
+        <!--MARS MOONS-->
+        <div class="side-info">
+            <div class="side-info-content">
+                <div class="left">&lt</div>
+                <div class="side-info-rotate" style="transform: rotateY(180deg);">
+                    <div class="side-info-element flex">
+                        <div class="moon-photo flex">
+                            <img src="images/deimos.jpg">
+                            <div class="moon-title">
+                                Deimos
+                            </div>
+                        </div>
+                        <div class="moon-description">
+                            Deimos este cel mai mic satelit natural dintre cele două luni ale lui Marte. Având o
+                            dimensiune de numai 15
+                            x 12 x 11 kilometri, Deimos se învârte în jurul planetei Marte la fiecare 30 de ore.
+                            La fel ca Phobos, Deimos este un obiect mic și nodulos, puternic craterat. Craterele sale
+                            au, în general, un diametru mai mic de 2,5 kilometri și îi lipsesc canelurile și crestele
+                            văzute pe Phobos. De obicei, atunci când un meteorit lovește o suprafață, materialul de
+                            suprafață este aruncat în sus și în afara craterului rezultat. Materialul cade de obicei la
+                            suprafața care înconjoară craterul. Cu toate acestea, aceste materiale nu sunt
+                            văzute pe Deimos, poate pentru că gravitația lunii este atât de mică încât ele au scăpat
+                            în spațiu. Deimos are, de asemenea, un regolit gros, poate la o adâncime de până la 100 de
+                            metri, format pe măsură ce meteoriții pulverizau
+                            suprafața.
+                        </div>
+                    </div>
+                    <div class="side-info-element flex">
+                        <div class="moon-photo flex">
+                            <img src="images/photobs.jpg">
+                            <div class="moon-title">
+                                Phobos
+                            </div>
+                        </div>
+                        <div class="moon-description">
+                            Phobos, aproape spulberat de un impact uriaș care a creat un crater imens și bătut de mii de
+                            impacturi de meteorit, este pe un curs de coliziune cu Marte.
+
+                            Phobos este cel mai mare dintre cele două luni ale lui Marte și are un diametru de 27 x 22 x
+                            18 kilometri. Orbitează Marte de trei ori pe zi și este atât de aproape de suprafața
+                            planetei încât în ​​unele locații de pe Marte nu poate fi întotdeauna văzut.
+
+                            Phobos se apropie de Marte cu o rată de 1,8 metri la fiecare sută de ani; în acest ritm, fie
+                            se va prăbuși pe Marte în 50 de milioane de ani, fie se va rupe într-un inel. Cea mai
+                            proeminentă caracteristică a sa este craterul Stickney de 9,7 kilometri, impactul
+                            său provocând modele de dungi pe suprafața lunii. Stickney a fost văzut de Mars Global
+                            Surveyor ca fiind umplut cu praf fin, cu dovezi de bolovani care alunecau pe suprafața
+                            sa înclinată.
+                        </div>
+                    </div>
+                </div>
+                <div class="right">&gt</div>
+            </div>
+        </div>
+        <!--JUPITER MOONS-->
+        <div class="side-info">
+            <div class="side-info-content">
+                <div class="left">&lt</div>
+                <div class="side-info-rotate" style="transform: rotateY(180deg);">
+                    <div class="side-info-element flex">
+                        <div class="moon-photo flex">
+                            <img src="images/io.jpg">
+                            <div class="moon-title">
+                                Io
+                            </div>
+                        </div>
+                        <div class="moon-description">
+                            Luna lui Jupiter Io este cea mai vulcanică lume activă din Sistemul Solar, cu sute de
+                            vulcani, unele fântâni de lavă în erupție înalte de zeci de mile (sau kilometri). Io este
+                            prins într-o tragere de război între gravitatea masivă a lui Jupiter și tragerile mai mici,
+                            dar precise, de la două luni vecine care orbitează mai departe de Jupiter - Europa și
+                            Ganimedes.
+                            Io este cu puțin mai mare decât luna Pământului, având aproximativ o pătrime din diametrului
+                            Pământului.
+                        </div>
+                    </div>
+                    <div class="side-info-element flex">
+                        <div class="moon-photo flex">
+                            <img src="images/europa.jpg">
+                            <div class="moon-title">
+                                Europa
+                            </div>
+                        </div>
+                        <div class="moon-description">
+                            Oamenii de știință sunt aproape siguri că ascuns sub suprafața înghețată a Europei se află
+                            un ocean cu apă sărată despre care se crede că conține de două ori mai multă apă decât
+                            oceanele Pământului combinate.
+
+                            Europa poate fi cel mai promițător loc din sistemul nostru solar pentru a găsi medii actuale
+                            potrivite pentru o formă de viață dincolo de Pământ.
+
+                            Puțin mai mică decât Luna Pământului, suprafața gheață-apă a Europei este străbătută de
+                            fracturi, crăpături, creste și benzi lungi și liniare. Coaja de gheață a lunii are,
+                            probabil, o grosime de 15 până la 25 de kilometri, sub care se
+                            estimează că oceanul are o adâncime de 60 până la 150 de kilometri.
+                            La fel ca Pământul, se crede că Europa conține și o manta stâncoasă și un miez de fier.
+
+                            Europa este numită după o femeie care, în mitologia greacă, a fost răpită de zeul Zeus
+                            (Jupiter în mitologia romană).
+                        </div>
+                    </div>
+                    <div class="side-info-element flex">
+                        <div class="moon-photo flex">
+                            <img src="images/ganymede.jpg">
+                            <div class="moon-title">
+                                Ganymede
+                            </div>
+                        </div>
+                        <div class="moon-description">
+                            Luna lui Jupiter Ganymede este cea mai mare lună din sistemul nostru solar
+                            și singura lună cu propriul său câmp magnetic. Câmpul magnetic provoacă aurore, care sunt
+                            panglici de gaz strălucitor, electrificat, în regiunile care înconjoară polii nordici și
+                            sudici ai lunii. Când câmpul magnetic al lui Jupiter se schimbă, aurorele de pe Ganymede se
+                            schimbă și ele, „balansându-se” înainte și înapoi.
+
+                            Ganymede are, de asemenea, regiuni mari, luminoase, de creste și caneluri care se taie pe
+                            terenuri mai vechi și mai întunecate. Aceste regiuni canelate sunt un indiciu că luna a
+                            cunoscut răsturnări dramatice în trecutul îndepărtat.
+
+                            În 2015, telescopul spațial Hubble al NASA a găsit cele mai bune dovezi până în prezent
+                            pentru un ocean subteran de apă sărată pe Ganymede. Se crede că oceanul subteran are mai
+                            multă apă decât toată apa de pe suprafața Pământului.
+
+                            Ganymede are trei straturi principale. O sferă de fier metalic în centru (nucleul, care
+                            generează un câmp magnetic), un înveliș sferic de rocă (manta) care înconjoară miezul și un
+                            înveliș sferic de gheață deasupra. Coaja de
+                            gheață din exterior este foarte groasă și are o grosime de aproximativ 800 de kilometri.
+                            Suprafața este chiar vârful învelișului de gheață. Conform oamenilor de știință, deși este
+                            în mare parte gheață, coaja ar putea conține o cantitate destul de mare de roci amestecate.
+                            Câmpul magnetic al lui
+                            Ganymede este încorporat în magnetosfera masivă a lui Jupiter.
+                        </div>
+                    </div>
+                    <div class="side-info-element flex">
+                        <div class="moon-photo flex">
+                            <img src="images/callisto.jpg">
+                            <div class="moon-title">
+                                Callisto
+                            </div>
+                        </div>
+                        <div class="moon-description">
+                            Callisto este a doua cea mai mare lună a lui Jupiter și a treia cea mai mare lună din
+                            sistemul nostru solar. Suprafața sa conține cele mai multe cratere din orice obiect din
+                            sistemul nostru solar. Imaginile cu Callisto capturate de navele spațiale trecătoare
+                            prezintă pete albe strălucitoare care se evidențiază pe regiuni mai întunecate. Oamenii de
+                            știință cred că zonele luminoase sunt în mare parte gheață și petele mai întunecate sunt
+                            zone în care gheața s-a erodat.
+
+                            Odată considerat un corp stâncos mort, inactiv, datele culese de nava spațială Galileo în
+                            anii 1990 indică faptul că Callisto ar putea avea un ocean sărat sub suprafața sa înghețată.
+                            Cercetări mai recente arată că acest ocean poate fi situat mai adânc sub suprafață decât se
+                            credea anterior sau poate să nu existe deloc. Dacă este prezent un ocean, este posibil ca
+                            oceanul să interacționeze cu stâncile de pe Callisto, creând un potențial habitat pentru
+                            viață.
+                        </div>
+                    </div>
+                </div>
+                <div class="right">&gt</div>
+            </div>
+        </div>
+        <!--SATURN MOONS-->
+        <div class="side-info">
+            <div class="side-info-content">
+                <div class="left">&lt</div>
+                <div class="side-info-rotate" style="transform: rotateY(180deg);">
+                    <div class="side-info-element flex">
+                        <div class="moon-photo flex">
+                            <img src="images/enceladus.jpg">
+                            <div class="moon-title">
+                                Enceladus
+                            </div>
+                        </div>
+                        <div class="moon-description">
+                            Puține lumi din sistemul nostru solar sunt la fel de convingătoare ca luna glacială
+                            Enceladus. Despre multe corpuri cerești se crede că au oceane de apă lichidă sub coaja lor
+                            înghețată, dar Enceladus își pulverizează oceanul în spațiu, unde o navă spațială îl poate
+                            observa. Din aceste eșantioane, oamenii de știință au stabilit că Enceladus are cele mai
+                            multe
+                            ingrediente chimice necesare vieții și probabil că are orificii hidrotermale care aruncă apă
+                            fierbinte bogată în minerale în oceanul său.
+
+                            Aproximativ la fel de lată ca Arizona, Enceladus are, de asemenea, cea mai albă, cea mai
+                            reflectantă suprafață din sistemul solar.
+                            Deoarece Enceladus reflectă atât de multă lumină solară, temperatura suprafeței este extrem
+                            de rece, aproximativ minus 200 grade Celsius. Luna își creează un inel propriu pe măsură ce
+                            orbitează în jurul lui Saturn - urma sa de particule înghețate se răspândește în
+                            spațiul din jurul orbitei sale, înconjurând planeta pentru a forma inelul E al lui Saturn.
+
+                            Imaginile de pe nava spațială Voyager din anii 1980 au indicat faptul că, deși această lună
+                            este mică - are doar o lungime de aproximativ 500 de kilometri - suprafața ei înghețată este
+                            remarcabil de netedă în unele locuri și alb strălucitor peste tot.
+                        </div>
+                    </div>
+                    <div class="side-info-element flex">
+                        <div class="moon-photo flex">
+                            <img src="images/titan.jpg">
+                            <div class="moon-title">
+                                Titan
+                            </div>
+                        </div>
+                        <div class="moon-description">
+                            Cea mai mare lună a lui Saturn, Titan, este o lume extraordinară și excepțională. Printre
+                            cele peste 150 de luni cunoscute ale sistemului nostru solar, Titan este singurul cu o
+                            atmosferă substanțială. Și din toate locurile din sistemul solar, Titan este singurul loc pe
+                            lângă Pământ despre care se știe că are lichide sub formă de râuri, lacuri și mări la
+                            suprafața sa.
+                            Titan este mai mare decât planeta Mercur și este a doua lună ca mărime din sistemul nostru
+                            solar. Ganymede, luna lui Jupiter, este puțin mai mare (cu aproximativ 2%). Atmosfera lui
+                            Titan este formată în mare parte din azot, ca și Pământul, dar cu o presiune de suprafață cu
+                            50% mai mare decât a Pământului. Titan are nori, ploi, râuri, lacuri și mări de hidrocarburi
+                            lichide precum metanul și etanul. Cele mai mari mări au sute de metri adâncime și sute de
+                            mile lățime. Sub coaja groasă de gheață de apă a lui Titan este mai mult lichid - un ocean
+                            în mare parte de apă, cu puțin metan. Apa subterană a lui Titan ar putea fi un loc
+                            de adăpostire a vieții așa cum o cunoaștem noi, în timp ce lacurile sale de suprafață și
+                            mările de hidrocarburi lichide ar putea adăposti viața care folosește o chimie diferită de
+                            ceea ce suntem obișnuiți - adică viața așa cum nu o știm încă. Titan ar putea fi, de
+                            asemenea, o lume lipsită de viață.
+                        </div>
+                    </div>
+                </div>
+                <div class="right">&gt</div>
+            </div>
+        </div>
+        <!--URANUS MOONS-->
+        <div class="side-info">
+            <div class="side-info-content">
+                <div class="left">&lt</div>
+                <div class="side-info-rotate" style="transform: rotateY(180deg);">
+                    <div class="side-info-element flex">
+                        <div class="moon-photo flex">
+                            <img src="images/ariel.jpg">
+                            <div class="moon-title">
+                                Ariel
+                            </div>
+                        </div>
+                        <div class="moon-description">
+                            Se consideră că toate lunile mai mari ale lui Uranus, inclusiv Ariel, constau în cea mai
+                            mare parte din cantități aproximativ egale de gheață de apă și rocă de silicat. De asemenea,
+                            dioxidul de carbon a fost detectat pe Ariel.
+
+                            Suprafața lui Ariel pare a fi cea mai tânără dintre toate lunile lui Uranus. Are puține
+                            cratere mari și multe mici, ceea ce indică faptul că coliziuni destul de recente cu impact
+                            redus au șters craterele mari care ar fi fost lăsate de lovituri mult mai vechi, mai mari.
+                            Se crede că Ariel a avut cea mai recentă activitate geologică a lunilor mai mari ale lui
+                            Uranus. Este transectat de grabeni, care sunt văi delimitate de falii.
+
+                            Ariel are cea mai strălucitoare suprafață a celor mai mari cinci luni uraniene, dar niciuna
+                            dintre ele nu reflectă mai mult de aproximativ o treime din lumina soarelui care le lovește.
+                            Acest lucru sugerează că suprafețele lor au fost întunecate de un material carbonic.
+                            Strălucirea lui Ariel crește dramatic atunci când este în opoziție - adică atunci când
+                            observatorul este direct între el și Soare. Acest lucru indică faptul că suprafața sa este
+                            poroasă, aruncând umbre care scad reflectivitatea atunci când sunt iluminate în alte
+                            unghiuri.
+
+                            Ca și alte luni uraniene, Ariel își menține aceeași față spre Uranus cât timp îl orbitează
+                            (la fel cu luna Pământului).
+                        </div>
+                    </div>
+                    <div class="side-info-element flex">
+                        <div class="moon-photo flex">
+                            <img src="images/oberon.jpg">
+                            <div class="moon-title">
+                                Oberon
+                            </div>
+                        </div>
+                        <div class="moon-description">
+                            Oberon este a doua cea mai mare lună a lui Uranus. Descoperit în 1787, nu se știau prea
+                            multe despre această lună până când Voyager 2 a trecut în timpul zborului său pe lângă
+                            Uranus în ianuarie 1986. Oberon este puternic craterat - similar cu Umbriel - mai ales în
+                            comparație cu alte trei luni ale lui Uranus: Ariel, Titania și Miranda. La fel ca toate
+                            lunile mari ale lui Uranus, Oberon este compus din aproximativ jumătate gheață și jumătate
+                            piatră. Oberon are cel puțin un munte mare care se ridică la aproximativ 6 km de la
+                            suprafață.
+                        </div>
+                    </div>
+                    <div class="side-info-element flex">
+                        <div class="moon-photo flex">
+                            <img src="images/puck.jpg">
+                            <div class="moon-title">
+                                Puck
+                            </div>
+                        </div>
+                        <div class="moon-description">
+                            Puck este una dintre lunile interioare mici ale lui Uranus. Cu un diametru de aproximativ
+                            150 km, Puck este cel mai mare dintre sateliții mai mici cunoscuți ai lui Uranus. Puck
+                            orbitează în jurul lui Uranus în mai puțin de o zi de pe Pământ.
+                        </div>
+                    </div>
+                    <div class="side-info-element flex">
+                        <div class="moon-photo flex">
+                            <img src="images/titania.jpg">
+                            <div class="moon-title">
+                                Titania
+                            </div>
+                        </div>
+                        <div class="moon-description">
+                            Titania este cea mai mare lună a lui Uranus. Imaginile făcute de Voyager 2 la aproape 200 de
+                            ani după descoperirea Titaniei au dezvăluit semne că luna era activă din punct de vedere
+                            geologic.
+
+                            Un sistem proeminent de văi de falii, lung de aproximativ 1.600 kilometri, este vizibil
+                            lângă terminator (linia umbrelor). Grabenurile rup crusta în două direcții, o indicație a
+                            unei extensii tectonice a crustei Titaniei. Depozite de materiale foarte reflectorizante,
+                            care pot reprezenta înghețul, pot fi văzute de-a lungul pereților văii orientate spre Soare.
+
+                            Luna are un diametru de aproximativ 1.600 de kilometri. Culoarea gri neutră a Titaniei este
+                            tipică pentru majoritatea lunilor uraniene semnificative.
+                        </div>
+                    </div>
+                    <div class="side-info-element flex">
+                        <div class="moon-photo flex">
+                            <img src="images/umbriel.jpg">
+                            <div class="moon-title">
+                                Umbriel
+                            </div>
+                        </div>
+                        <div class="moon-description">
+                            Umbriel este cea mai întunecată dintre cele mai mari luni ale lui Uranus. Acesta reflectă
+                            doar 16% din lumina care lovește suprafața sa, o caracteristică similară cu zonele înalte de
+                            pe luna Pământului. Alte luni uraniene sunt mult mai strălucitoare. Procesul prin care
+                            suprafața antică a lui Umbriel a fost întunecată rămâne un mister.
+
+                            Umbriel are un diametru de aproximativ 1.200 de kilometri. Imaginile făcute de Voyager 2 în
+                            1986 au dezvăluit un inel strălucitor și curios, cu o diametru de aproximativ 140 de
+                            kilometri pe suprafața întunecată a lunii. Nu este clar ce a creat inelul distinctiv, deși
+                            pot fi depuneri de îngheț asociate cu un crater de impact.
+                        </div>
+                    </div>
+                </div>
+                <div class="right">&gt</div>
+            </div>
+        </div>
+        <!--NEPTUNE MOONS-->
+        <div class="side-info">
+            <div class="side-info-content">
+                <div class="left">&lt</div>
+                <div class="side-info-rotate" style="transform: rotateY(180deg);">
+                    <div class="side-info-element flex">
+                        <div class="moon-photo flex">
+                            <img src="images/triton.jpg">
+                            <div class="moon-title">
+                                Triton
+                            </div>
+                        </div>
+                        <div class="moon-description">
+                            Triton este cea mai mare dintre cele 13 luni ale lui Neptun. Este neobișnuit, deoarece este
+                            singura lună mare din sistemul nostru solar care orbitează în direcția opusă rotației
+                            planetei sale - o orbită retrogradă.
+
+                            Oamenii de știință cred că Triton este un obiect al centurii Kuiper capturat de gravitația
+                            lui Neptun în urmă cu milioane de ani. Împărtășește multe asemănări cu Pluto, cea mai
+                            cunoscută lume a centurii Kuiper.
+
+                            La fel ca luna noastră, Triton este blocat într-o rotație sincronă cu Neptun - o parte se
+                            confruntă permanent cu planeta. Dar, datorită înclinației sale orbitale neobișnuite, ambele
+                            regiuni polare se îndreaptă spre Soare.
+
+                            Triton are un diametru de 2.700km. Suprafața acestuia are puține cratere, cu câmpii
+                            vulcanice și movile. Luna are o suprafață din nitrogen înghețat care acoperă o manta de
+                            gheață. Mantaua probabil acoperă un nucleu din roci și metal. Triton are densitatea dublă
+                            față de cea a apei, de unde rezultă că acesta are mai multă piatră în interior față de
+                            sateliții lui Saturn și Uranus.
+
+                        </div>
+                    </div>
+                    <div class="side-info-element flex">
+                        <div class="moon-photo flex">
+                            <img src="images/proteus.jpg">
+                            <div class="moon-title">
+                                Proteus
+                            </div>
+                        </div>
+                        <div class="moon-description">
+                            Proteus este una dintre cele mai mari dintre lunile cunoscute ale lui Neptun, deși nu este
+                            la fel de mare ca Triton. Luna are o formă ciudată ca o cutie și, dacă ar avea doar puțină
+                            masă, s-ar putea transforma într-o sferă. Proteus orbitează Neptun aproximativ la fiecare 27
+                            de ore.
+
+                            Proteus are o formă neregulată și este puternic craterat, dar nu prezintă semne de
+                            modificare geologică. Înconjurând planeta în aceeași direcție în care Neptun se rotește,
+                            Proteus rămâne aproape de planul ecuatorial al lui Neptun. Proteus este unul dintre cele mai
+                            întunecate obiecte din sistemul nostru solar. La fel ca luna lui Saturn Phoebe, Proteus
+                            reflectă doar șase procente din lumina soarelui care o lovește.
+                        </div>
+                    </div>
+                    <div class="side-info-element flex">
+                        <div class="moon-photo flex">
+                            <img src="images/larissa.jpg">
+                            <div class="moon-title">
+                                Larissa
+                            </div>
+                        </div>
+                        <div class="moon-description">
+                            Larissa este o altă lună mică găsită lângă sistemul de inele slabe ale lui Neptun în 1989.
+                            La fel ca Despina și Galatea, Larissa are o formă neregulată și este puternic craterată.
+
+                            Orbita Larissa este în cea mai mare parte circulară, dar încet se transformă în spirală spre
+                            interior și poate afecta în cele din urmă atmosfera lui Neptun sau forțele mareelor
+                            ​​gigantului gazos pot distruge luna pentru a forma un inel planetar. Larissa orbitează în
+                            jurul lui Neptun în aproximativ 13 ore și 20 de minute.
+                        </div>
+                    </div>
+                </div>
+                <div class="right">&gt</div>
+            </div>
+        </div>
+        <!--PLUTO MOONS-->
+        <div class="side-info">
+            <div class="side-info-content">
+                <div class="left">&lt</div>
+                <div class="side-info-rotate" style="transform: rotateY(180deg);">
+                    <!--translateZ(600px)-->
+                    <div class="side-info-element flex">
+                        <div class="moon-photo flex">
+                            <img src="images/charon.jpg">
+                            <div class="moon-title">
+                                Charon
+                            </div>
+                        </div>
+                        <div class="moon-description">
+                            La jumătate din mărimea lui Pluto, Caron este cel mai mare dintre lunile lui Pluto și cel
+                            mai mare satelit cunoscut în raport cu corpul său părinte. Pluto-Charon este singurul sistem
+                            planetar dublu cunoscut al sistemului nostru solar. Aceleași suprafețe ale lui Charon și
+                            Pluto se confruntă întotdeauna, fenomen denumit blocare reciprocă a mareelor. Charon
+                            orbitează Pluto la fiecare 6,4 zile de pe Pământ.
+                        </div>
+                    </div>
+                    <div class="side-info-element flex">
+                        <div class="moon-photo flex">
+                            <img src="images/nix-and-hydra.jpg">
+                            <div class="moon-title">
+                                Nix&Hydra
+                            </div>
+                        </div>
+                        <div class="moon-description">
+                            Nix a fost descoperită alături de alt satelit natural, Hydra, în 2005. Aceasta este luna mai
+                            apropiată de Pluto dintre cele două. Nix și Hydra sunt de aproximativ 5.000 de ori mai slabe
+                            decât Pluto și sunt de aproximativ două până la trei ori mai departe de Pluto decât luna sa
+                            mare, Charon, care a fost descoperită în 1978. Nix și Hydra au o lățime de aproximativ 30
+                            până la 110 km. Sunt atât de mici și atât de slabe încât oamenii de știință au combinat o
+                            expunere scurtă a lui Pluto și Charon și o expunere îndelungată a lui Nix și Hydra pentru a
+                            crea imagini cu toate împreună.
+                        </div>
+                    </div>
+                    <div class="side-info-element flex">
+                        <div class="moon-photo flex">
+                            <img src="images/styx.jpg">
+                            <div class="moon-title">
+                                Styx
+                            </div>
+                        </div>
+                        <div class="moon-description">
+                            Minuscula lună a lui Pluto Styx a fost descoperită într-un sondaj Hubble în căutarea
+                            potențialelor pericole în avans din iulie 2015, când nava New Horizons a trecut pe lângă
+                            Pluto.
+                            Este fascinant faptul că o planetă atât de mică poate avea o colecție atât de complexă de
+                            sateliți. Descoperirea oferă indicii suplimentare pentru a descoperi modul în care s-a
+                            format și a evoluat sistemul Pluto. Teoria favorizată este că toate lunile sunt relicve ale
+                            unei coliziuni între Pluto și un alt obiect mare din centură Kuiper, cu miliarde de ani în
+                            urmă.
+
+                            Luna se estimează că are un diametru de 10 până la 24 de kilometri. Se află într-o orbită
+                            circulară de 93.000 de kilometri diametru în jurul lui Pluto, care se presupune că se află
+                            pe același plan cu ceilalți sateliți din sistem.
+                        </div>
+                    </div>
+                </div>
+                <div class="right">&gt</div>
+            </div>
+        </div>
+        <div class="close-side-info flex">X</div>
+    </div>
+
+    <!--sliders container - presentation of every planet and its moons-->
+    <div class="container visible">
+        <div class="fader translateX presentation flex odd">
+            <div class="presentation-info">
+                <div class="presentation-title">
+                    Luna Pământului
+                </div>
+                <div class="presentation-description">
+                    Luna Pământului este singurul loc dincolo de Pământ unde oamenii au pus piciorul.
+                    <br><br>
+                    Cel mai strălucitor și mai mare obiect din cerul nostru nocturn, Luna face din Pământ o planetă mai
+                    locuibilă, moderând oscilația planetei noastre de origine pe axa sa, ducând la un climat relativ
+                    stabil. De asemenea, provoacă maree, creând un ritm care a ghidat oamenii timp de mii de ani. Luna
+                    s-a
+                    format probabil după ce un corp de dimensiunea lui Marte s-a ciocnit cu Pământul.
+                    <br><br>
+                    Luna Pământului este a cincea ca mărime dintre cele peste 200 de luni care orbitează planetele din
+                    sistemul nostru solar.
+                    <br><br>
+                    Singurul satelit natural al Pământului se numește pur și simplu „Luna”, deoarece oamenii nu știau că
+                    există alte luni până când Galileo Galilei a descoperit patru luni care orbitează Jupiter în 1610.
+                    <br><br>
+                    NASA are în prezent trei nave spațiale robotice care explorează Luna - Lunar Reconnaissance Orbiter
+                    și nava spațială gemenă ARTEMIS (nu trebuie confundat cu noul program Artemis al NASA de a trimite
+                    astronauții înapoi pe Lună).
+                </div>
+            </div>
+            <div class="presentation-img" id="earth-moons-presentation"
+                onclick="window.open('https://solarsystem.nasa.gov/moons/earths-moon/overview')">
+                <img src="images/earth-moon.jpg">
+            </div>
+        </div>
+        <div class="fader translateX presentation flex even">
+            <div class="presentation-info">
+                <div class="presentation-title">
+                    Lunile planetei Marte
+                </div>
+                <div class="presentation-description">
+                    Asaph Hall era pe punctul de a renunța la căutarea sa frustrantă pentru o lună marțiană într-o
+                    noapte de august din 1877, dar soția sa Angelina l-a îndemnat să continue. El l-a descoperit pe
+                    Deimos în noaptea următoare și pe Phobos după șase nopți.
+                    <br><br>
+                    Nouăzeci și patru de ani mai târziu, nava spațială Mariner 9 a NASA a obținut niște imagini mult mai
+                    bune cu cele două luni de pe orbita sa din jurul planetei Marte. Trăsătura dominantă pe Phobos, a
+                    constatat, era un crater lat de 10 kilometri - aproape jumătate din lățimea lunii în sine. I s-a dat
+                    numele de familie al Angelinei: Stickney.
+                    <br><br>
+                    <span class="expand-trigger">Mai multe</span>
+                </div>
+            </div>
+            <div class="presentation-img" id="mars-moons-presentation"
+                onclick="window.open('https://solarsystem.nasa.gov/moons/mars-moons/overview')">
+                <img src="images/mars-moon.jpg">
+            </div>
+        </div>
+        <div class="fader translateX presentation flex odd">
+            <div class="presentation-info">
+                <div class="presentation-title">
+                    Lunile planetei Jupiter
+                </div>
+                <div class="presentation-description">
+                    Jupiter are 53 de luni numite și alte 26 care așteaptă nume oficiale. Combinate, oamenii de știință
+                    cred acum că Jupiter are 79 de luni.
+                    <br><br>
+                    Există multe luni interesante care orbitează planeta, dar cele cu cel mai mare interes științific
+                    sunt primele patru luni descoperite dincolo de Pământ - sateliții galileeni.
+                    <br><br>
+                    <span class="expand-trigger">Mai multe</span>
+                </div>
+            </div>
+            <div class="presentation-img" id="jupiter-moons-presentation"
+                onclick="window.open('https://solarsystem.nasa.gov/moons/jupiter-moons/overview')">
+                <img src="images/jupiter-moon.jpg">
+            </div>
+        </div>
+        <div class="fader translateX presentation flex even">
+            <div class="presentation-info">
+                <div class="presentation-title">
+                    Lunile planetei Saturn
+                </div>
+                <div class="presentation-description">
+                    Saturn are 82 de luni. Cincizeci și trei de luni sunt confirmate și numite și alte 29 de luni
+                    așteptă confirmarea descoperirii și denumirea oficială. Lunile lui Saturn variază de la dimensiuni
+                    mai mari decât planeta Mercur - luna gigantă Titan - la luni la fel de mici ca o arenă sportivă.
+                    Sateliții
+                    modelează, contribuie și colectează, de asemenea, materialul din inelele și magnetosfera lui Saturn.
+                    <br><br>
+                    <span class="expand-trigger">Mai multe</span>
+                </div>
+            </div>
+            <div class="presentation-img" id="saturn-moons-presentation"
+                onclick="window.open('https://solarsystem.nasa.gov/moons/saturn-moons/overview/')">
+                <img src="images/saturn-moon.jpg">
+            </div>
+        </div>
+        <div class="fader translateX presentation flex odd">
+            <div class="presentation-info">
+                <div class="presentation-title">
+                    Lunile planetei Uranus
+                </div>
+                <div class="presentation-description">
+                    <i>„Luna dulce”</i>, a scris William Shakespeare în <cite>Visul unei nopți de vară</cite>,
+                    <i>„Mulțumesc, divină lună,
+                        pentru razele-ți solare; Mulțumesc din suflet pentru razele de aur"</i>.
+                    <br><br>
+                    Secole mai târziu, lunile lui Uranus aduc un omagiu celebrului dramaturg. În timp ce majoritatea
+                    sateliților care orbitează alte planete își iau numele din diverse mitologii, lunile lui Uranus sunt
+                    unice pentru a fi numite după personaje shakespeariene, împreună cu câteva luni fiind numite după
+                    personaje din operele lui Alexander Pope.
+                    <br><br>
+                    <span class="expand-trigger">Mai multe</span>
+                </div>
+            </div>
+            <div class="presentation-img" id="uranus-moons-presentation"
+                onclick="window.open('https://solarsystem.nasa.gov/moons/uranus-moons/overview')">
+                <img src="images/uranus-moon.jpg">
+            </div>
+        </div>
+        <div class="fader translateX presentation flex even">
+            <div class="presentation-info">
+                <div class="presentation-title">
+                    Lunile planetei Neptun
+                </div>
+                <div class="presentation-description">
+                    Nu știm cu ce băutură William Lassell ar fi putut sărbători descoperirea lunii lui Neptun, Triton,
+                    dar berea a făcut-o posibilă. Lassell a fost unul dintre marii astronomi amatori ai Angliei din
+                    secolul al XIX-lea, folosind averea pe care a făcut-o în afacerea fabricii de bere pentru a-și
+                    finanța telescoapele. El l-a văzut pe Triton pe 10 octombrie 1846 - la doar 17 zile după ce un
+                    observator din Berlin a descoperit planeta Neptun.
+                    <br><br>
+                    Oamenii de știință care folosesc telescoape puternice și nave spațiale au descoperit de atunci un
+                    total de 14 luni care orbitează această lume îndepărtată și gigantică.
+                    <br><br>
+                    <span class="expand-trigger">Mai multe</span>
+                </div>
+            </div>
+            <div class="presentation-img" id="neptune-moons-presentation"
+                onclick="window.open('https://solarsystem.nasa.gov/moons/neptune-moons/overview')">
+                <img src="images/neptune-moon.jpg">
+            </div>
+        </div>
+        <div class="fader translateX presentation flex odd">
+            <div class="presentation-info">
+                <div class="presentation-title">
+                    Lunile planetei Pluto
+                </div>
+                <div class="presentation-description">
+                    Se crede că întregul sistem lunar al lui Pluto s-a format printr-o coliziune între planeta pitică și
+                    un alt obiect al centurii Kuiper la începutul istoriei sistemului solar. Lovitura a aruncat
+                    material care s-a alăturat familiei de sateliți observați în jurul lui Pluto. "Lunile formează o
+                    serie de orbite îngrijite, asemănătoare cu păpușile rusești", a declarat Mark Showalter de la
+                    Institutul
+                    SETI.
+                    <br><br>
+                    <span class="expand-trigger">Mai multe</span>
+                </div>
+            </div>
+            <div class="presentation-img" id="pluto-moons-presentation"
+                onclick="window.open('https://solarsystem.nasa.gov/moons/pluto-moons/overview')">
+                <img src="images/pluto-moon.jpg">
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script src="javascript/jquery-initialise.js"></script>
+    <script src="javascript/observers.js"></script>
+    <script src="javascript/side-info.js"></script>
+    <script src="javascript/header.js"></script>
+</body>
+
+</html>
